@@ -15,13 +15,11 @@ public class Solution {
             }
             if (nums[mid] < target) {
                 lowerBoundary = mid + 1;
-            }
-            if (nums[mid] > target) {
+            } else {
                 upperBoundary = mid - 1;
             }
         }
 
         return nums[mid] < target ? mid + 1 : mid;
     }
-
 }
