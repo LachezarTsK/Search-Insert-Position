@@ -7,7 +7,7 @@ public class Solution {
         int upperBoundary = nums.length - 1;
         int mid = 0;
 
-        while (lowerBoundary < upperBoundary) {
+        while (lowerBoundary <= upperBoundary) {
 
             mid = (lowerBoundary + upperBoundary) / 2;
             if (nums[mid] == target) {
